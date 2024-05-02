@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>My portfolio website</title> -->
+    <title>{% block title %}sign Up{% endblock %}</title>
+    <!-- link to font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+    <div class="formCont">
+        <label for="click"> <i class="fas fa-times"></i></label>
+        <div class="formHeader">
+            <h1>Create New Account</h1>
+
+        <form method="POST">
+            <div class="formField">
+                <label for="firstName">First Name</label><br>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your name here">
+            </div>
+
+            <div class="formField">
+                <label for="email">Your Email</label><br>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email here">
+            </div>
+        
+            <div class="formField">
+                <label for="password1">Password</label><br>
+                <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter password">
+            </div>
+
+            <div class="formField">
+                <label for="password2">Password</label><br>
+                <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm password">
+            </div>
+
+            <div class="termsField">
+                <input type="checkbox" name="check">
+                <label>I Agree to  <a href="#" class="link-color">Terms & Condition</a></label>
+
+            </div>
+        
+            <div class="btnCont">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="altField">
+                <span> Already have an account? </span>
+                <a href="/login" class="link-color">Login Now</a>
+            </div>
+
+        </form>
+
+    </div>
+
+
+<script src="../static/js/script.js"></script>
+</body>
+</html>

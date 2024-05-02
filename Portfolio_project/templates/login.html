@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}Login{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="images/my_logo3.jpg" />
+    <!-- link to font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+    <div class="main">
+    	<div class="formCont">
+            <label for="click"> <i class="fas fa-times"></i></label>
+    		<div class="formHeader">
+	    		<h1>Login Your Account</h1>
+	    	</div>
+			
+			
+
+			<form method="POST">
+				<div class="formField">
+					<label for="email">Your Email</label><br>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email here">
+				</div>
+			
+				<div class="formField">
+					<label for="password">Password</label><br>
+					<input type="password" class="form-control" id="password1" name="password" placeholder="Enter password">
+				</div>
+			
+				<div class="btnCont">
+				<!-- <input type="button" name="submit" value="Register"> -->
+					<button type="Login" class="btn btn-primary">Login</button>
+				</div>
+
+				<!-- <div class="btnCont"> -->
+	    			<!-- <a href="../templates/layout.html#home"><button>Login</button></a> -->
+	    		<!-- </div> -->
+
+	    		<div class="altField">
+	    			<span> Need an Account? </span>
+	    			<a href="/sign_up" class="link-color">Sign up Now</a>
+	    		</div>
+			
+			</form>
+    	</div>
+    </div>
+
+
+<script src="../static/javascript/script.js"></script>
+</body>
+</html>
